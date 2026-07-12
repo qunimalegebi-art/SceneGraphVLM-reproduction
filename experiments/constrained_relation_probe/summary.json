@@ -1,0 +1,41 @@
+{
+  "frames": 4,
+  "relation_only_compliance_rate": 0.0,
+  "valid_whitelist_relation_rate": 0.0,
+  "malformed_relation_rows": 1,
+  "mean_generation_time_sec": 7.991287974989973,
+  "frames_detail": [
+    {
+      "frame": 0,
+      "relation_only": false,
+      "relations": 1,
+      "valid_whitelist_relations": 0,
+      "malformed_relation_rows": 0,
+      "generation_time_sec": 8.262873400002718
+    },
+    {
+      "frame": 1,
+      "relation_only": false,
+      "relations": 1,
+      "valid_whitelist_relations": 0,
+      "malformed_relation_rows": 0,
+      "generation_time_sec": 7.718298899941146
+    },
+    {
+      "frame": 2,
+      "relation_only": false,
+      "relations": 1,
+      "valid_whitelist_relations": 0,
+      "malformed_relation_rows": 0,
+      "generation_time_sec": 6.6888553000753745
+    },
+    {
+      "frame": 3,
+      "relation_only": false,
+      "relations": 0,
+      "valid_whitelist_relations": 0,
+      "malformed_relation_rows": 1,
+      "generation_time_sec": 9.295124299940653
+    }
+  ]
+}

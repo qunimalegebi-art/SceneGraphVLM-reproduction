@@ -1,0 +1,15 @@
+{
+  "frames": 4,
+  "parsed_frames": 4,
+  "parse_success_rate": 1.0,
+  "mean_objects_per_frame": 10.0,
+  "mean_relations_per_frame": 1.25,
+  "mean_generation_time_sec": 9.006400649988791,
+  "relations": 5,
+  "valid_relation_id_rate": 1.0,
+  "predicate_counts": {
+    "on": 3,
+    "walking-on": 1,
+    "holding": 1
+  }
+}

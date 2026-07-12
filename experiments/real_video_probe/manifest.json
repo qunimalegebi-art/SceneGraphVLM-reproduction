@@ -1,0 +1,22 @@
+[
+  {
+    "frame": 0,
+    "source": "D:\\SAMJAM\\src\\SAMJAM-official\\SAMJAM-main\\input\\epic_move_cup_4_frames\\0000000320.jpg",
+    "prepared": "D:\\scene\\experiments\\real_video_probe\\frames_640x480\\0000.jpg"
+  },
+  {
+    "frame": 1,
+    "source": "D:\\SAMJAM\\src\\SAMJAM-official\\SAMJAM-main\\input\\epic_move_cup_4_frames\\0000000330.jpg",
+    "prepared": "D:\\scene\\experiments\\real_video_probe\\frames_640x480\\0001.jpg"
+  },
+  {
+    "frame": 2,
+    "source": "D:\\SAMJAM\\src\\SAMJAM-official\\SAMJAM-main\\input\\epic_move_cup_4_frames\\0000000340.jpg",
+    "prepared": "D:\\scene\\experiments\\real_video_probe\\frames_640x480\\0002.jpg"
+  },
+  {
+    "frame": 3,
+    "source": "D:\\SAMJAM\\src\\SAMJAM-official\\SAMJAM-main\\input\\epic_move_cup_4_frames\\0000000350.jpg",
+    "prepared": "D:\\scene\\experiments\\real_video_probe\\frames_640x480\\0003.jpg"
+  }
+]
