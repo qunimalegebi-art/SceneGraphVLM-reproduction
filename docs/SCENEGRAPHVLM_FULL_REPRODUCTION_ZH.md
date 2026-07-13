@@ -1,6 +1,6 @@
 # SceneGraphVLM 论文全量复现说明（服务器 GPU 版）
 
-本文档用于提交到 Git，给远程 GPU 服务器上的师兄/协作者使用。目标是把 SceneGraphVLM 的复现流程讲清楚：需要哪些数据、哪些 checkpoint、如何确认是否使用 vLLM 加速、如何从 smoke test 逐步跑到全量 baseline。
+本文档面向远程 GPU 服务器上的使用者/协作者。目标是把 SceneGraphVLM 的复现流程讲清楚：需要哪些数据、哪些 checkpoint、如何确认是否使用 vLLM 加速、如何从 smoke test 逐步跑到全量 baseline。
 
 ---
 
@@ -180,7 +180,7 @@ checkpoints/PVSG
 
 ## 5. 推荐服务器目录结构
 
-建议师兄在服务器上使用类似目录：
+建议使用者在服务器上使用类似目录：
 
 ```text
 /home/<user>/projects/SceneGraphVLM/
@@ -357,34 +357,7 @@ git clone 代码
 
 ---
 
-## 12. 给师兄的最小执行说明
-
-可以直接发：
-
-```text
-师兄，代码里我会放两类脚本：
-
-1. scripts/server/run_debug_transformers.sh
-   用于服务器上先调通流程，速度慢。
-
-2. scripts/server/run_*_vllm.sh
-   用于服务器 GPU 上跑 vLLM 加速 baseline。
-
-只有运行命令里包含 --infer-backend vllm，才代表尝试论文加速设置。
-
-建议先：
-bash scripts/server/check_server_env.sh
-bash scripts/server/run_smoke_vllm.sh
-
-确认没问题后，再跑：
-bash scripts/server/run_full_pvsg_vllm.sh
-bash scripts/server/run_full_psg_vllm.sh
-bash scripts/server/run_full_ag_vllm.sh
-```
-
----
-
-## 13. 当前本地已经完成的证明
+## 12. 当前本地已经完成的证明
 
 本地已完成：
 

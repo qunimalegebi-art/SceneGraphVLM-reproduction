@@ -1,6 +1,6 @@
 # Git 上传与服务器交接清单
 
-本文档用于把 SceneGraphVLM 复现代码交给师兄/服务器时检查。
+本文档用于把 SceneGraphVLM 复现代码交给远程服务器使用者/协作者时检查。
 
 ---
 
@@ -74,7 +74,7 @@ git ls-files | grep -E "safetensors|checkpoints.zip|\\.pt$|\\.mp4$|\\.avi$|\\.en
 
 ## 4. 服务器 clone 后第一步
 
-师兄 clone 后：
+使用者 clone 后：
 
 ```bash
 cd SceneGraphVLM
@@ -125,28 +125,31 @@ bash scripts/server/run_debug_transformers.sh
 
 ---
 
-## 6. 推荐发给师兄的话
+## 6. 协作者执行摘要
 
-```text
-师兄，我会把 SceneGraphVLM 复现代码上传到 Git。
+本仓库包含：
 
-Git 里包含：
 1. 本地 baseline 记录；
 2. 服务器 vLLM 运行脚本；
-3. AG/PSG/PVSG 全量 baseline 脚本；
+3. AG / PSG / PVSG 全量 baseline 脚本；
 4. 数据和 checkpoint 准备说明。
 
-Git 里不会放 checkpoint 和完整数据集，这些需要服务器单独下载或我后续传过去。
+本仓库不包含 checkpoint 和完整数据集。使用者需要在服务器上单独下载或挂载这些资源。
 
-服务器上建议先跑：
+服务器上建议先运行：
+
+```bash
 bash scripts/server/check_server_env.sh
 bash scripts/server/run_smoke_vllm.sh
+```
 
-确认 vLLM smoke test 成功后，再跑：
+确认 vLLM smoke test 成功后，再运行：
+
+```bash
 bash scripts/server/run_full_pvsg_vllm.sh
 bash scripts/server/run_full_psg_vllm.sh
 bash scripts/server/run_full_ag_vllm.sh
-
-注意：只有脚本里使用 --infer-backend vllm，才代表尝试论文中的加速推理设置；transformers 版本只是调试 baseline。
 ```
+
+注意：只有脚本里使用 `--infer-backend vllm`，才代表尝试论文中的加速推理设置；Transformers 版本只是调试 baseline。
 
