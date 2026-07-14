@@ -171,4 +171,6 @@ Thumbs.db
 # --- Local reproduction probes ---
 experiments/**/frames/
 experiments/**/frames_640x480/
+!experiments/smoke_probe/frames_640x480/
+!experiments/smoke_probe/frames_640x480/0000.jpg
 experiments/**/*.gif
